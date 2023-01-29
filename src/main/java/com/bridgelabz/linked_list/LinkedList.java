@@ -11,7 +11,7 @@ public class LinkedList implements List{
 		this.size = 0;
 	}
 	 
-	 public void add (Integer data) {
+	 public void insertFirst (Integer data) {
 		 
 		 Node newNode = new Node(data);
 		 newNode.next = head;
@@ -23,7 +23,18 @@ public class LinkedList implements List{
 		 size++;
 	 }
 	 
-	 
+	 public void insertLast(Integer data)
+	 {
+		 if(tail == null)
+		 {
+			 insertFirst(data);
+			 return; 
+		 }
+		 Node newNode = new Node(data);
+		 tail.next = newNode;
+		 tail = newNode;
+		 size++;
+	 }
 	 
 	 public void printValue() {
 		 Node temp = head;

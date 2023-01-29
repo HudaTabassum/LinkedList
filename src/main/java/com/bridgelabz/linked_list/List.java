@@ -2,6 +2,7 @@ package com.bridgelabz.linked_list;
 
 public interface List {
 	
-	void add(Integer data);
+	void insertFirst(Integer data);
+	void insertLast(Integer data);
    void printValue();
 }
