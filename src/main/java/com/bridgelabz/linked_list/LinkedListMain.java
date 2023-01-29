@@ -6,9 +6,10 @@ public class LinkedListMain  {
 		
 	
 	LinkedList number = new LinkedList();
-	  number.add(20);
+	  number.add(56);
 	  number.add(30);
-	  number.add(60);
+	  number.add(70);
+	  
 	//  System.out.println(number);
 	  number.printValue();
 	}
