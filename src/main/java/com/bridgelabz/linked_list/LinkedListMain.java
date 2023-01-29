@@ -9,6 +9,7 @@ public class LinkedListMain  {
 	  number.insertLast(56);
 	  number.insertLast(30);
 	  number.insertLast(70);
+	  number.insert(60, 2);
 	  
 	//  System.out.println(number);
 	  number.printValue();

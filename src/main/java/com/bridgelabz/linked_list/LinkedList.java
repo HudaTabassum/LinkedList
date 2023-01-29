@@ -36,6 +36,31 @@ public class LinkedList implements List{
 		 size++;
 	 }
 	 
+	 public void insert(Integer data, Integer index)
+	 {
+		 if (index == 0)
+		 {
+			 insertFirst(data);
+			 return;
+		 }
+		 if (index == size)
+		 {
+			 insertLast(data);
+			 return;
+		 }
+		 
+		 Node temp = head;
+		 for(int i =1; i < index; i++)
+		 {
+			 temp = temp.next;
+		 }
+		 
+		 Node newNode = new Node(data, temp.next);
+		 temp.next = newNode;
+		 
+		 size++;
+	 }
+	 
 	 public void printValue() {
 		 Node temp = head;
 		 while (temp != null)
