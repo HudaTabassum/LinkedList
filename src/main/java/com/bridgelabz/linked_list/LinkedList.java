@@ -61,6 +61,17 @@ public class LinkedList implements List{
 		 size++;
 	 }
 	 
+	 public int deleteFirst() {
+		 int data = head.data;
+		 head = head.next;
+		 if(head == null)
+		 {
+			 tail = null;
+		 }
+		 size--;
+		 return data;
+	 }
+	 
 	 public void printValue() {
 		 Node temp = head;
 		 while (temp != null)
